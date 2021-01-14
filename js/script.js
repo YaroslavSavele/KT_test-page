@@ -8,12 +8,13 @@ plus.addEventListener('click', function () {
    count.textContent = number;
 });
 minus.addEventListener('click', function () {
-   number--;
    if (number > 1) {
-   count.textContent = number;
+      number--;
 } else {
-   count.textContent = 1;
+   number = 1;
 }
+count.textContent = number;
+
 })
 
 
